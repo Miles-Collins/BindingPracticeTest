@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <label>Input name here:</label>
+    </div>
+    <div class="col-12">
+      <input type="text" class="form-control" [(ngModel)]="userName">
+    </div>
+    <hr>
+    <div class="col-12">
+      <button type="submit" [disabled]="!userName" (click)="resetInput()">Submit</button>
+      <p class="mt-5">{{userName}}</p>
+    </div>
+  </div>
+</div>
